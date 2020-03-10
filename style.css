@@ -1,0 +1,47 @@
+#highscores {
+    color : purple;
+    background-color: transparent;
+    border: none;
+}
+#timer {
+    float: right ;
+}
+#main {
+    
+}
+ul {
+    list-style: none;
+}
+.options {
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    width: 500px;
+    padding: 20px;  
+    height: 20px;
+    margin-bottom: 15px;
+}
+.hide {
+    display: none;
+}
+.btn {
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+   
+    height: 80px;
+    width: 200px;
+    font-size: x-large;
+
+}
+#container {
+    width: 500px;
+    align-content: center;
+    text-align: center;  
+    padding: 20px;
+    margin: auto;
+}
+#about {
+    font-weight: bold;
+    font-size: medium;
+}
