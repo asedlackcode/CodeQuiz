@@ -21,9 +21,7 @@ ul {
     height: 20px;
     margin-bottom: 15px;
 }
-.hide {
-    display: none;
-}
+
 .btn {
     border-radius: 12px;
     background-color: blue;
