@@ -5,11 +5,12 @@ function startTest() {
     var answered = 0;
     var correct = 0;
     var wrong = 0;
-    for (let i = 0; i <=  questions.length; i++) {
+    
+    for (let i = 0; i <  questions.length; i++) {
         console.log(i);
     var questionContainer = $("<div>").addClass(".questionContainer");
     var html = "<h1>" + questions[i].question + "</h1>";
-    html += "<div> <button>" + questions[i].answers.a + "</button> <button>" + questions[i].answers.b + "</button> <button>" + questions[0].answers.c + " </button> <button>" + questions[i].answers.d + "</button> </div>";
+    html += "<div> <button>" + questions[i].answers.a + "</button> <button>" + questions[i].answers.b + "</button> <button>" + questions[i].answers.c + " </button> <button>" + questions[i].answers.d + "</button> </div>";
     $(questionContainer).html(html);
     $("#container").append(questionContainer);
     }
