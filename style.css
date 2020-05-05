@@ -6,8 +6,14 @@
 #timer {
     float: right ;
 }
-#main {
-    
+#nextBtn {
+    border-radius: 12px;
+    background-color: blue;
+    color: white;
+    margin-top: 30px;
+    height: 40px;
+    width: 100px;
+    font-size: x-large;
 }
 ul {
     list-style: none;
@@ -42,4 +48,8 @@ ul {
 #about {
     font-weight: bold;
     font-size: medium;
+}
+
+.hide {
+    display: none;
 }
