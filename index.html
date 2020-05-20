@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <div id="nav">
-        <button id="highscores">View Highscores</button>
-        <p id="timer">Timer</p>
+        <a href="highscore.html" ><button class="btn" id="highscores">View Highscores</button></a>
+        <p class="right hide" id="timer"></p>
     </div>    
     <div id="main">
-        <div id="container">
+        <div class="container center">
+            <div class= "qs">
             <div class="questions hide">
-                <h1 id="showingQuestion">test</h1>
+                <h1 id="showingQuestion"></h1>
                 <div class='qstnGiven'></div>
+            </div>
             </div>
             <div id="startScreen">
                 <h1 id="start">Begin the Quiz!</h1>
@@ -23,8 +27,18 @@
                 <button id="beginQuiz" class="btn">Start!</button>
                 <!-- <button id= "nextBtn">Next</button> -->
             </div>   
-            
+            <div class="finished hide">
+                <h3>Enter your initials to save your score</h3>
+                <div class="initials input-field col s6">
+                    <input id="input_text"  type="text" data-length="10">
+                    <label for="input_text" placeholder="Initials"></label>
+                  </div>
+            <!-- <textarea class="initials" placeholder="Initials"></textarea> -->
+            <button class= "save btn">Save Score</button>
+            </div>
         </div>
+        <h3 class="correctAns light-green-text text-accent-3 center hide">Correct!</h3>
+        <h3 class= "wrongAns red-text text-accent-4 center hide">Wrong!</h3>
     </div>             
 
  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

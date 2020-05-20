@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+</head>
+<body>
+    <div class="container">
+    <h1>Highscores</h1>
+    <a href="index.html"><button class="btn">New Quiz</button></a>
+    <div class="scores">
+        <ul class="collection">
+            <li id="list" class="collection-item"></li>
+            
+          </ul>
+                 
+    </div>
+</div>
+    
+    <script>
+        document.getElementById("list").innerHTML = localStorage.getItem("newscore"); 
+       if (document.getElementById("list") !== "") {
+           document.getElementsByClassName("collection").appendChild("<li id='list'>");
+       }
+    </script>
+</body>
+</html>
