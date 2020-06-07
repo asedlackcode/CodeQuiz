@@ -98,7 +98,7 @@ function renderQuestion() {
     
     $(".questions").removeClass("hide");
     var q = questions[currentQuestion];
-    var html = q.question;
+    //var html = q.question;
     var answerBlock = q.answers;
     console.log(answerBlock);
     $("#showingQuestion").text(q.question)
@@ -140,7 +140,7 @@ function renderQuestion() {
 
 
     
-    $(".showingQuestion").html(html);
+   // $(".showingQuestion").html(html);
     
     //var questionContainer = $("<div>").addClass(".questionContainer");
     /*var html = "<h1>" + q.question + "</h1>";
@@ -161,10 +161,10 @@ function renderQuestion() {
 //click event on save score btn
 //save local storage the textarea and score
 //
-$('.save').click(function(res) {
+$('.save').on("click", function(res) {
     var initialsEntry = ($('.initials').val() + " " + correct);
     console.log(correct);
-    localStorage.setItem( "newscore", initialsEntry);
+    localStorage.setItem('newscore', initialsEntry);
    // localStorage.setItem( correct);
     window.location.href="highscore.html";
     })
